@@ -1,0 +1,50 @@
+
+:root {
+  --accent: #6b2fa5;
+  --bg: #f9f9ff;
+  --text: #222;
+  --card-bg: #fff;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+header {
+  background: linear-gradient(90deg, #d8b9ff, var(--accent));
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 { margin: 0; font-size: 1.6rem; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+nav a:hover { text-decoration: underline; }
+main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  transition: transform .2s ease;
+}
+.card:hover { transform: translateY(-5px); }
+.card h2 { margin-top: 0; color: var(--accent); }
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 2rem 1rem;
+}
